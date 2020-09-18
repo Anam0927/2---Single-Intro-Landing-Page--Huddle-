@@ -1,0 +1,191 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #674baf url("../images/bg-desktop.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  line-height: 1.5;
+  font-size: 1rem;
+  letter-spacing: 1.25px;
+  position: relative;
+  height: 100vh;
+  max-width: 1200px;
+  padding: 5% 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.main-content .illustrations {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50%;
+}
+
+.main-content .illustrations svg {
+  -webkit-filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+}
+
+.main-content .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50%;
+  padding: 25px;
+  padding-right: 0;
+}
+
+.main-content .content .heading {
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.main-content .content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+}
+
+.main-content .content p {
+  margin-bottom: 25px;
+}
+
+.main-content .content button {
+  background: white;
+  color: #674baf;
+  font: inherit;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.main-content .content button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main-content .content button:focus {
+  outline: none;
+  border: 2px solid magenta;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+
+.social-icons .icons {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.social-icons .icons:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: magenta;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    background: #674baf url("../images/bg-mobile.svg") no-repeat;
+    background-size: contain;
+    padding: 10%;
+    text-align: center;
+    height: auto;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .logo {
+    width: 40%;
+  }
+  .main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20%;
+  }
+  .main-content .illustrations {
+    width: 100%;
+  }
+  .main-content .content {
+    width: 100%;
+    padding: 25px 0;
+  }
+  .main-content .content .heading {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .main-content .content h1 {
+    font-size: 1.5rem;
+  }
+  .main-content .content button {
+    font-size: 0.85rem;
+  }
+  .social-icons {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 15% 0;
+    margin-bottom: 0;
+  }
+  .social-icons .icons {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
